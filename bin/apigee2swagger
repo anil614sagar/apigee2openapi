@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+'use strict';
+
+var program = require('commander');
+var version = require('../lib/util/cli').version();
+var fetch = require('../lib/fetch_api');
+
+
+
+program
+  .version(version);
+
+program
+  .usage('<options>')
+  .option('-f, --file <file>', 'API Bundle destination location....')
+  .description('Generates Swagger 2.0 Spec from Apigee Proxy');
+
+program.on('--help', function(){
+  console.log('  Examples:');
+  console.log('');
+  console.log('    $ apigee2swagger --help');
+  console.log('    $ apigee2swagger -d /Users/Anil/Desktop/');
+  console.log('');
+});
+
+program.parse(process.argv);
+
+var options = {};
+options.file = program.file;
+
+fetch.fetchProxy(options, function(err, reply) {
+  if(err) {
+    console.log(err);
+  }
+  else {
+    console.log(reply);
+  }
+});
