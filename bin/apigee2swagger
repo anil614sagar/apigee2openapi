@@ -3,7 +3,7 @@
 
 var program = require('commander');
 var version = require('../lib/util/cli').version();
-var fetch = require('../lib/fetch_api');
+var fetch = require('../lib/fetchApi');
 
 
 
@@ -12,7 +12,7 @@ program
 
 program
   .usage('<options>')
-  .option('-f, --file <file>', 'API Bundle destination location....')
+  .option('-d, --destination <file>', 'API Bundle destination location....')
   .description('Generates Swagger 2.0 Spec from Apigee Proxy');
 
 program.on('--help', function(){
@@ -26,7 +26,7 @@ program.on('--help', function(){
 program.parse(process.argv);
 
 var options = {};
-options.file = program.file;
+options.destination = program.destination;
 
 fetch.fetchProxy(options, function(err, reply) {
   if(err) {
