@@ -15,3 +15,10 @@ $ sudo npm install -g apigee2swagger
 ```
 
 
+#### Examples
+
+```bash
+$ apigee2swagger -d /Users/Anil/Desktop/
+```
+
+
