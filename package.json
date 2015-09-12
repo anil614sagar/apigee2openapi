@@ -6,6 +6,9 @@
   "scripts": {
     "test": "make test"
   },
+  "bin": {
+    "apigee2swagger": "bin/apigee2swagger"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/anil614sagar/apigee2swagger.git"
