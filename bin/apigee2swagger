@@ -33,6 +33,6 @@ fetch.fetchProxy(options, function(err, reply) {
     console.log(err);
   }
   else {
-    console.log(reply);
+    //nothing for now..
   }
 });
