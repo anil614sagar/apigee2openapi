@@ -20,3 +20,13 @@ $ sudo npm install -g apigee2openapi
 ```bash
 $ apigee2openapi -d /Users/Anil/Desktop/
 ```
+
+#### Articles
+
+https://community.apigee.com/articles/10044/apigee2openapi-a-nodejs-command-line-tool-to-gener.html
+
+#### How to Contribute ?
+
+Submit issues / patches here https://github.com/anil614sagar/apigee2openapi
+
+Q & A ? http://community.apigee.com/
