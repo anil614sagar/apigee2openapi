@@ -1,31 +1,31 @@
 {
-  "name": "apigee2swagger",
+  "name": "apigee2openapi",
   "version": "0.1.5",
-  "description": "Apigee Edge Proxy to Swagger 2.0 conversion tool",
+  "description": "Apigee Edge Proxy Bundle to OpenAPI 2.0 conversion tool",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "bin": {
-    "apigee2swagger": "bin/apigee2swagger"
+    "apigee2openapi": "bin/apigee2openapi"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anil614sagar/apigee2swagger.git"
+    "url": "https://github.com/anil614sagar/apigee2openapi.git"
   },
   "keywords": [
     "Apigee",
     "Proxy",
-    "Swagger",
+    "openapi",
     "2.0",
     "Tool"
   ],
   "author": "Anil Sagar <anil614sagar@gmail.com> (https://in.linkedin.com/in/anilsagar/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anil614sagar/apigee2swagger/issues"
+    "url": "https://github.com/anil614sagar/apigee2openapi/issues"
   },
-  "homepage": "https://github.com/anil614sagar/apigee2swagger",
+  "homepage": "https://github.com/anil614sagar/apigee2openapi",
   "dependencies": {
     "apigeetool": "^0.5.4",
     "async": "^1.4.2",

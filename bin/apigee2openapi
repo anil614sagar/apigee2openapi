@@ -13,13 +13,13 @@ program
 program
   .usage('<options>')
   .option('-d, --destination <file>', 'API Bundle destination location....')
-  .description('Generates Swagger 2.0 Spec from Apigee Proxy');
+  .description('Generates openapi 2.0 Spec from Apigee Proxy');
 
 program.on('--help', function(){
   console.log('  Examples:');
   console.log('');
-  console.log('    $ apigee2swagger --help');
-  console.log('    $ apigee2swagger -d /Users/Anil/Desktop/');
+  console.log('    $ apigee2openapi --help');
+  console.log('    $ apigee2openapi -d /Users/Anil/Desktop/');
   console.log('');
 });
 

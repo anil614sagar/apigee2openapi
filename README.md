@@ -1,24 +1,22 @@
-# apigee2swagger
-Apigee Edge Proxy to Swagger 2.0 conversion tool.
+# apigee2openapi
+Apigee Edge Proxy to OpenAPI 2.0 (formerly known as Swagger) conversion tool. This project used to be called `apigee2swagger` prior to the specification becoming part of the [OpenAPI Initiative](https://openapis.org).
 
 # Installation
 
-You can install `apigee2swagger` either through npm or by cloning and linking the code from GitHub.  This document covers the installation details for installing from npm.
+You can install `apigee2openapi` either through npm or by cloning and linking the code from GitHub.  This document covers the installation details for installing from npm.
 
 ## Installation from npm
 
-The `apigee2swagger` module and its dependencies are designed for Node.js and is available through npm using the following command:
+The `apigee2openapi` module and its dependencies are designed for Node.js and is available through npm using the following command:
 
 ### From a Terminal Window:
 ```bash
-$ sudo npm install -g apigee2swagger
+$ sudo npm install -g apigee2openapi
 ```
 
 
 #### Examples
 
 ```bash
-$ apigee2swagger -d /Users/Anil/Desktop/
+$ apigee2openapi -d /Users/Anil/Desktop/
 ```
-
-
