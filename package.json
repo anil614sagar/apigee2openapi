@@ -1,6 +1,6 @@
 {
   "name": "apigee2openapi",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Apigee Edge Proxy Bundle to OpenAPI 2.0 conversion tool",
   "main": "index.js",
   "scripts": {
