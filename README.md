@@ -16,9 +16,13 @@ $ sudo npm install -g apigee2openapi
 
 
 #### Examples
-
+1. Download proxy bundle from Edge instance and generate OAI
 ```bash
 $ apigee2openapi -d /Users/Anil/Desktop/
+```
+2. Use local proxy bundle (zip) to generate specs
+```bash
+$ apigee2openapi -d ~/Documents/GlobalWeather -l ~/Documents/GlobalWeather.zip -n GlobalWeather -e https://msebai-test.apigee.net
 ```
 
 #### Articles
