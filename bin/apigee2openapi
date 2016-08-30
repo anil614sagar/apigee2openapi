@@ -13,6 +13,9 @@ program
 program
   .usage('<options>')
   .option('-d, --destination <file>', 'API Bundle destination location....')
+  .option('-l, --local <file>', 'Use local API bundle')
+  .option('-n, --name <API name>', 'API proxy name. Required if local bundle is used')
+  .option('-e, --endpoint <API proxy endpoint>', 'API proxy endpoint e.g. https://{ORGNAME}-{ENV}.apigee.net. Required if local bundle is used.')
   .description('Generates openapi 2.0 Spec from Apigee Proxy');
 
 program.on('--help', function(){
@@ -20,6 +23,7 @@ program.on('--help', function(){
   console.log('');
   console.log('    $ apigee2openapi --help');
   console.log('    $ apigee2openapi -d /Users/Anil/Desktop/');
+  console.log('    $ apigee2openapi -d ~/Desktop/weather-api -l ~/Desktop/WeatherAPI.zip -n WeatherAPI -e https://msebai-test.apigee.net');
   console.log('');
 });
 
@@ -27,6 +31,9 @@ program.parse(process.argv);
 
 var options = {};
 options.destination = program.destination;
+options.file = program.local;
+options.api = program.name;
+options.proxyEndPoint = program.endpoint;
 
 fetch.fetchProxy(options, function(err, reply) {
   if(err) {
