@@ -4,7 +4,11 @@
   "description": "Apigee Edge Proxy Bundle to OpenAPI 2.0 conversion tool",
   "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "bin": {
     "apigee2openapi": "bin/apigee2openapi"
