@@ -1,14 +1,10 @@
 {
   "name": "apigee2openapi",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Apigee Edge Proxy Bundle to OpenAPI 2.0 conversion tool",
   "main": "index.js",
   "scripts": {
-    "test": "make test",
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
+    "test": "make test"
   },
   "bin": {
     "apigee2openapi": "bin/apigee2openapi"
@@ -31,15 +27,15 @@
   },
   "homepage": "https://github.com/anil614sagar/apigee2openapi",
   "dependencies": {
-    "apigeetool": "^0.5.4",
+    "apigeetool": "^0.15.1",
     "async": "^1.4.2",
     "commander": "^2.8.1",
     "glob": "^5.0.14",
-    "inquirer": "^0.9.0",
+    "inquirer": "^8.1.3",
     "mkdirp": "^0.5.1",
-    "mocha": "^2.3.2",
-    "request": "^2.61.0",
-    "unzip": "^0.1.11",
+    "mocha": "^9.1.1",
+    "node-unzip-2": "^0.2.7",
+    "request": "^2.88.0",
     "xml2js": "^0.4.12"
   },
   "devDependencies": {
